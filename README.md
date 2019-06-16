@@ -1,5 +1,6 @@
 # cadastro-de-pessoas
-Uma aplicação para testar algumas tecnolgias, para fins didáticos. 
+O objetivo desta aplicação é testar algumas tecnologias, para fins didáticos. 
+
 Um pequeno cadastro de pessoas utilizando: 
 
 * vue.js 
