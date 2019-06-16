@@ -1,13 +1,19 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
-    font-size: 18px;
 }
 
 .container {
     margin: 0 auto;
     padding: 20px;
-    width: 100%;
+    width: 96%;
     max-width: 800px;
+    min-height: 300px;
+    border: 5px solid #999;
 }
 
 table {
@@ -67,4 +73,15 @@ td {
 
 button {
     border: 1px solid #aaa;
+}
+
+
+header, footer {
+    background-color: #999;
+    margin: 10px auto;
+    padding: 20px;
+    width: 96%;
+    max-width: 800px;
+    text-align: center;
+    color: white;
 }

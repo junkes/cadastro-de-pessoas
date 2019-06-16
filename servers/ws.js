@@ -73,5 +73,5 @@ io.on('connection', async socket => {
     
 })
 server.listen(3000, () => {
-    console.log('WS server runing on pot 3000!')
+    console.log('Servidor Websocket rodando na porta 3000!')
 })
