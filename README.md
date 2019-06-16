@@ -6,7 +6,7 @@ Um pequeno cadastro de pessoas utilizando:
 * vue.js 
 * node.js 
 * express 
-* websocket.io
+* socket.io
 * mysql
 
 Toda a interação com o servidor é feita pelo protocolo WS e não por HTTP.
