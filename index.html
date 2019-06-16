@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste Vue</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="node_modules/socket.io-client/dist/socket.io.dev.js"></script>
+  <script src="node_modules/moment/min/moment.min.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <div id="app">
+      <div>
+	      websocket: <span style="background-color:red;color:white;padding: 0 5px" id="status_conexao">desconectado!</span>
+      </div>
+      <hr />
+      <div class="flex">
+        <div class="flex-item">          
+          <label for="nome">Nome</label><br>
+          <input type="text" class="text" id="nome">
+        </div>
+        <div class="flex-item">
+          <label for="telefone">Telefone</label><br>
+          <input type="text" class="text" id="telefone">
+        </div>
+        <div class="flex-item-button">          
+          <label for="telefone">&nbsp;</label><br>
+          <button class="btn" type="button" @click="cadastrarPessoa()">Cadastrar</button>
+        </div>
+      </div>
+      <!-- <button class="btn btn-primary" type="button" onclick="getDatabases()">Listar bancos</button> -->
+      
+      <table class="table">
+        <tr>
+          <!-- <th class="id">Id</th> -->
+          <th class="nome">Nome</th>
+          <th class="telefone">Telefone</th>
+          <th>Data Cadastro</th>
+          <th></th>
+        </tr>
+        <tr v-for="pessoa in pessoas">
+          <!-- <td class="id">{{pessoa.id}}</td> -->
+          <td class="nome">{{pessoa.nome}}</td>
+          <td class="telefone">{{pessoa.telefone}}</td>
+          <td>{{pessoa.data_cadastro}}</td>
+          <td><button class="delete" @click="deletePessoa(pessoa.id)">&times;</button></td>
+        </tr>
+      </table>
+      
+    </div>
+  </main>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
