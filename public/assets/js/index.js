@@ -1,4 +1,6 @@
-let socket = io('http://192.168.1.100:3000')
+let host = '192.168.1.100'
+
+let socket = io(`http://${host}:3000`)
 socket.on('connect', () => {
     if (typeof app != 'undefined' && app.pessoas.length) app.pessoas = []
     status_conexao.innerHTML = 'conectado!'
