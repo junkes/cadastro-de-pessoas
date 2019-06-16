@@ -9,6 +9,6 @@ Um pequeno cadastro de pessoas utilizando:
 * socket.io
 * mysql
 
-Toda a interação com o servidor é feita pelo protocolo WS e não por HTTP.
+Após carregar a página inicial, toda a interação com o servidor é feita pelo protocolo WS e não por HTTP.
 
 Have Fun!
